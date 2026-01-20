@@ -1,6 +1,6 @@
 import FileManager from '../utils/fileManager';
-import { DEFAULT_INVENTORY } from '@shared/defaults';
-import type { InventoryData, InventoryItem } from '@shared/types';
+import { DEFAULT_INVENTORY } from '../../shared/defaults';
+import type { InventoryData, InventoryItem } from '../../shared/types';
 
 /**
  * 背包数据管理器

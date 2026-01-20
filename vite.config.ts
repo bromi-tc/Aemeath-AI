@@ -10,12 +10,20 @@ export default defineConfig({
     electron([
       {
         // 主进程入口文件
-        entry: 'src/main/index.ts',
+        entry: path.resolve(__dirname, 'src/main/index.ts'),
         vite: {
           build: {
-            outDir: 'dist/main',
+            outDir: path.resolve(__dirname, 'dist/main'),
             rollupOptions: {
               external: ['electron']
+            }
+          },
+          resolve: {
+            alias: {
+              '@': path.resolve(__dirname, 'src'),
+              '@main': path.resolve(__dirname, 'src/main'),
+              '@renderer': path.resolve(__dirname, 'src/renderer'),
+              '@shared': path.resolve(__dirname, 'src/shared')
             }
           }
         }
@@ -30,9 +38,10 @@ export default defineConfig({
       '@shared': path.resolve(__dirname, 'src/shared')
     }
   },
-  root: 'src/renderer',
+  root: path.resolve(__dirname, 'src/renderer'),
+  publicDir: path.resolve(__dirname, 'public'),
   build: {
-    outDir: '../../dist/renderer',
+    outDir: path.resolve(__dirname, 'dist/renderer'),
     emptyOutDir: true
   },
   server: {

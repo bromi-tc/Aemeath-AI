@@ -1,6 +1,6 @@
 import FileManager from '../utils/fileManager';
-import { DEFAULT_SETTINGS } from '@shared/defaults';
-import type { AppSettings } from '@shared/types';
+import { DEFAULT_SETTINGS } from '../../shared/defaults';
+import type { AppSettings } from '../../shared/types';
 
 /**
  * 设置数据管理器

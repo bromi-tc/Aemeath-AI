@@ -14,6 +14,13 @@ contextBridge.exposeInMainWorld('electronAPI', {
   saveData: (data: any) => ipcRenderer.invoke('data-save', data),
   loadData: () => ipcRenderer.invoke('data-load'),
 
+  // 背包操作
+  getInventoryItems: () => ipcRenderer.invoke('inventory-get-items'),
+  useInventoryItem: (itemId: string) => ipcRenderer.invoke('inventory-use-item', itemId),
+
+  // 喂食操作
+  feedPet: (itemId: string, effect: any) => ipcRenderer.invoke('pet-feed', itemId, effect),
+
   // 平台信息
   platform: process.platform
 });

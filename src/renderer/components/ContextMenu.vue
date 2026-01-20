@@ -45,6 +45,11 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import { usePetStore } from '../stores/petStore';
 
+// 定义 emits
+const emit = defineEmits<{
+  openFeedMenu: [];
+}>();
+
 const petStore = usePetStore();
 
 const visible = ref(false);
@@ -66,8 +71,8 @@ const hideMenu = () => {
 
 // 喂食
 const handleFeed = async () => {
-  console.log('喂食');
-  // TODO: 打开喂食菜单
+  console.log('打开喂食菜单');
+  emit('openFeedMenu');
   hideMenu();
 };
 

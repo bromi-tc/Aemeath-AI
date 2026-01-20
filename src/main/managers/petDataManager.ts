@@ -1,6 +1,6 @@
 import FileManager from '../utils/fileManager';
-import { DEFAULT_PET_STATE } from '@shared/defaults';
-import type { PetState } from '@shared/types';
+import { DEFAULT_PET_STATE } from '../../shared/defaults';
+import type { PetState } from '../../shared/types';
 
 /**
  * 宠物数据管理器
