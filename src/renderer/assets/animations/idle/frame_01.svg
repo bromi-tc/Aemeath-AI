@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 占位图片 - 请替换为实际的角色动画 -->
+  <rect width="512" height="512" fill="none"/>
+
+  <!-- 简单的角色占位 -->
+  <circle cx="256" cy="256" r="150" fill="#FFE4C4" stroke="#DEB887" stroke-width="4"/>
+
+  <!-- 眼睛 -->
+  <circle cx="200" cy="230" r="20" fill="#333"/>
+  <circle cx="312" cy="230" r="20" fill="#333"/>
+
+  <!-- 眼睛高光 -->
+  <circle cx="208" cy="224" r="8" fill="#FFF"/>
+  <circle cx="320" cy="224" r="8" fill="#FFF"/>
+
+  <!-- 嘴巴 -->
+  <path d="M 220 290 Q 256 320 292 290" stroke="#333" stroke-width="4" fill="none"/>
+
+  <!-- 腮红 -->
+  <ellipse cx="170" cy="270" rx="20" ry="12" fill="#FFB6C1" opacity="0.6"/>
+  <ellipse cx="342" cy="270" rx="20" ry="12" fill="#FFB6C1" opacity="0.6"/>
+
+  <!-- 文字说明 -->
+  <text x="256" y="400" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">
+    请替换为实际的角色动画
+  </text>
+</svg>
